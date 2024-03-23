@@ -80,4 +80,52 @@ public class physicsFinal_20220808006 {
         return chart;
     }
 
+    public static void Question2() {
+
+        System.out.println("*************** QUESTION 2 *************** \n");
+        System.out.println(
+                "Two bullets of mass 10kg come from opposite directions"
+                        + " along  the x-plan eand hit a stationary block of"
+                        + " mass 80kg.");
+        System.out.println(
+                "The x-plane  V1= +10 m/s ; V2= -50 m/s. In which "
+                        + "direction and at what speed in m/s does the block"
+                        + " move? ");
+        System.out.println("(there is o friction!)");
+        System.out.println();
+        System.out.println(" -(negative direction)    <<<<<<<< || >>>>>>>>"
+                + "    (pozitive direction)+");
+        System.out.println();
+        System.out.println("Before the collision:");
+
+        int m1 = 10;
+        int V1 = 10;
+        int m2 = 10;
+        int V2 = 50;
+        int mblock = 80;
+        int Vblock = 0;
+
+        int momentumOfm1 = m1 * V1;
+        int momentumOfm2 = -m2 * V2;
+        int momentumOfBlock = mblock * Vblock;
+
+        int totalInitialMomentum = momentumOfBlock + momentumOfm1 +
+                momentumOfm2;
+
+        System.out.println("momentum of the block : " + momentumOfBlock);
+        System.out.println("momentum of the m1 : " + momentumOfm1);
+        System.out.println("momentum of the m2 : " + momentumOfm2);
+        System.out.println("total momentum : " + totalInitialMomentum);
+
+        System.out.println();
+        System.out.println("After the collision :");
+
+        int totalMass = 100;
+        int VofblockFinal = totalInitialMomentum / totalMass;
+        System.out.println("final momentum: " + totalInitialMomentum);
+        System.out.println("the final mass moves this velocity and in "
+                + "this direction : " + VofblockFinal + " m/s");
+
+    }
+
 }
